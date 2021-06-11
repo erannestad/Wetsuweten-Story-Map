@@ -1,0 +1,11 @@
+var occupationPoints = {
+"type": "FeatureCollection",
+"name": "occupation-points",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "TITLE": "Kilometer 27 Cabin", "SLUG": "27", "DATE": "2020\/01\/01", "DESC": "Cabin built outside of the exclusion zone. The cabin was a place for hereditary cheifs to gather as well as a location for supporters of the Wet'suwet'en to stay. This camp was the primary interface between the general public, press, and the Wet'suwet'en", "auxiliary_storage_labeling_positionx": 944297.46269304282, "auxiliary_storage_labeling_positiony": 1017974.0889455054 }, "geometry": { "type": "Point", "coordinates": [ -126.854139239307656, 54.206489617974647 ] } },
+{ "type": "Feature", "properties": { "id": 2, "TITLE": "Kilometer 39 Wet'suwet'en Camp", "SLUG": "39", "DATE": null, "DESC": null, "auxiliary_storage_labeling_positionx": 923703.75073219754, "auxiliary_storage_labeling_positiony": 1025595.0066025289 }, "geometry": { "type": "Point", "coordinates": [ -127.020378793581202, 54.19426535151733 ] } },
+{ "type": "Feature", "properties": { "id": 3, "TITLE": "Kilometer 44 Gidimt'en Camp", "SLUG": "44", "DATE": null, "DESC": null, "auxiliary_storage_labeling_positionx": 920551.49476580287, "auxiliary_storage_labeling_positiony": 1015251.4749982244 }, "geometry": { "type": "Point", "coordinates": [ -127.085855398258317, 54.183560745710892 ] } },
+{ "type": "Feature", "properties": { "id": 4, "TITLE": "Kilometer 66 Unist'ot'en Camp and Healing Center", "SLUG": "66", "DATE": null, "DESC": null, "auxiliary_storage_labeling_positionx": 898968.20871375874, "auxiliary_storage_labeling_positiony": 1017885.5864537456 }, "geometry": { "type": "Point", "coordinates": [ -127.374244747147543, 54.196675137330111 ] } }
+]
+}

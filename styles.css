@@ -1,0 +1,250 @@
+html {
+	font-family: "Open Sans Pro", Sans-Serif;
+	color: #efefef;
+	background-color: #1f1f1f;
+}
+
+body {
+	color: #efefef !important;
+	background-color: #1f1f1f !important;
+	margin: 0px;
+}
+
+section {
+	display: grid;
+	top: 0;
+	left: 0;
+	padding: 24px 24px 0px 24px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+	grid-column-gap: 24px;
+	max-width: 1400px; 
+}
+
+section.expand-left {
+	grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+}
+
+.left {
+	background-color: none;
+	position: relative;
+	grid-column-start: 1;
+  	grid-column-end: 7;
+
+}
+
+.right {
+	background-color: none;
+	position: relative;
+	grid-column-start: 7;
+  	grid-column-end: 13;
+
+}
+
+/*.responsive-bar {
+	position: fixed;
+	top: calc(100% / 2);
+	left: 0;
+	width: 100%;
+	height: 1;
+	border-bottom: dashed 1px gray;
+}*/
+
+.header-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 24px;
+	fill: url(assets/gradient.svg#MyGradient);
+}
+
+/*****************/
+/*****  MAP  *****/
+
+.map {
+	background-color: darkgray;
+	width: 100%;
+	padding-top: 75%;	
+}
+
+.map-container {
+	/*position: sticky;
+	top: 100px;*/
+}
+
+.media-container {
+	position: sticky;
+	margin-top: -150px;
+	top: 24px;
+}
+
+.expanded-left .media-container {
+	position: absolute !important;
+	top: 24px !important;
+}
+
+.supporting-content {
+	position: relative;
+	width: 100%;
+	margin-top: 6px;
+	height: auto;
+	background-color: #252525;
+}
+
+.disabled {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.caption-container{
+	transition: opacity 1s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.caption{
+	max-width: 400px;
+	text-align:justify;  
+    text-justify: auto;
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+}
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+
+.heading {
+	grid-column-start: 1;
+  	grid-column-end: 7;
+  	text-align: right;
+
+}
+
+.leaflet-interactive {
+    transition: stroke-opacity 1s, opacity 1s, fill-opacity 1s, fill-color 1s;
+}
+
+.dynamic-text {
+	margin-bottom: 8rem;
+}
+
+.dynamic-text.inactive * {
+	opacity: .3;
+}
+
+.dynamic-text.active * {
+	opacity: 1;
+}
+
+
+
+
+
+/*****************/
+/****TYPOGRAPHY***/
+
+h2 {
+	color: #aaaaaa;
+	font-family: "Source Sans Pro", Sans-Serif;;
+	font-weight: bold;
+	font-size: 48px;
+}
+
+a {
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.icon-container {
+	margin-bottom: 6px;
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+.small-icon-container {
+	color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 4px;
+}
+
+.small-icon-container:hover {
+	color: white;
+	background-color: #3e3e3e;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 4px;
+}
+
+.small-icon-container.active {
+	color: white;
+	background-color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 4px;
+}
+
+.small-icon{
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url(icons/bootstrap-icons/icons/arrows-fullscreen_white.svg);
+    background-position: center;
+    background-size: contain;
+}
+
+.small-icon-container.active .small-icon {
+    background-image: url(icons/bootstrap-icons/icons/arrows-fullscreen-contract_black.svg);
+}
+
+
+p {
+	font-family: "Source Sans Pro", Sans-Serif;;
+	font-weight: 200;
+	font-size: 28px;
+	margin-bottom: 2rem;
+	margin-top: 0;
+}
+
+.caption-container * {
+	color: #b5b5b5;
+	font-family: "Source Code Pro", Monospace;;
+	font-weight: 400;
+	font-size: 12px;
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 32px;
+
+}
+
+a {
+	color: orangered !important;
+	text-decoration: none !important;
+}
+
+a:hover {
+	background-color: orangered;
+	color: white !important;
+}
